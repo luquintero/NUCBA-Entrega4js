@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background:#84a98c;
+  color: white;
+  font-family: sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 5%;
+}
+
+.container {
+  background-color: #84a98c;
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.search-title {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+form {
+  display: flex;
+  gap: 0;
+}
+form button {
+  background-color: #cad2c5;
+  outline: none;
+  border: none;
+  color: #2f3e46;
+  padding: 8px 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+form input {
+  background-color: #cad2c5;
+  outline: none;
+  border: none;
+  padding: 8px 5px;
+  color: #2f3e46;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 360px;
+}
+
+input::placeholder {
+  color: #2f3e46;
+}
+
+.pokemon-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #cad2c5;
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+  flex-direction: column;
+  opacity: 0;
+  max-width: 300px;
+  height: auto;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+img {
+  max-width: 220px;
+  max-height: 300px;
+}
+
+.pokemon-info-container {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+
+.pokemon-title {
+  font-size: 35px;
+  font-weight: 300;
+  color: #2f3e46;
+}
+
+.pokemon-type {
+  font-size: 20px;
+  background-color: #ceb02c;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 5px 0 10px 0;
+  padding: 5px 0 5px 0;
+}
+
+.pokemon-height {
+  font-weight: 100;
+  font-size: 18px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  color: #2f3e46;
+}
+
+.pokemon-weight {
+  font-weight: 100;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  color: #2f3e46;
+}
+
+.search-msg {
+  width: 100%;
+  text-align: center;
+}
+
+.animate {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
